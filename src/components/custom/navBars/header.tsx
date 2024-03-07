@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { Sheet, SheetClose, SheetContent, SheetDescription, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 import { HamburgerMenuIcon } from '@radix-ui/react-icons';
-import Logo from '../../../assets/images/logos/cent.png'
+import Logo from '../../../assets/images/logos/cerashatamlogo.png'
 import Image from 'next/image';
 
 const Header = () => {
@@ -15,9 +15,9 @@ const Header = () => {
         <div className='flex justify-center items-center fixed top-0 w-full bg-background/30 backdrop-blur-sm shadow z-50'>
             <div className="flex justify-between items-center w-full max-w-[1440px] px-4 py-2">
                 <div className="flex justify-start items-center gap-3">
-                    <div className="flex justify-center items-center rounded-full bg-white">
+                    <Link href='/' className="flex justify-center items-center rounded-full overflow-hidden">
                         <Image src={Logo} alt='' className='size-10 object-contain' />
-                    </div>
+                    </Link>
                     <Link href='/' className='text-2xl'>Cerashatam</Link>
                 </div>
                 <div className="hidden lg:flex justify-start items-center gap-3">
@@ -36,6 +36,9 @@ const Header = () => {
                         </SheetTrigger>
                         <SheetContent>
                             <SheetHeader>
+                                <Link href='/' className="flex justify-center items-center rounded-full overflow-hidden">
+                                    <Image src={Logo} alt='' className='size-32 object-contain' />
+                                </Link>
                                 <SheetTitle>Cerashatam</SheetTitle>
                                 <SheetDescription>
                                     Celebrating 100 years of Ceramic Engineering IIT BHU
