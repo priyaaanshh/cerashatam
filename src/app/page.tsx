@@ -16,8 +16,7 @@ const Home = () => {
     <div className='flex flex-col justify-start items-start h-full'>
       <div className="flex flex-col justify-center items-center w-full h-full">
         <Carousel>
-          <CarouselContent>
-            <CarouselItem><Items /></CarouselItem>
+          <CarouselContent className='w-screen'>
             <CarouselItem><Items /></CarouselItem>
             <CarouselItem><Items /></CarouselItem>
             <CarouselItem><Items /></CarouselItem>
