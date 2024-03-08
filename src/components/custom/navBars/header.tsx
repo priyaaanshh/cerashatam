@@ -14,7 +14,7 @@ const Header = () => {
     // const name = "Ceraशतम्";
     const name = "Cerashatam";
     return (
-        <div className='flex justify-center items-center fixed top-0 w-full bg-background/30 backdrop-blur-sm shadow z-50'>
+        <div className='flex justify-center items-center fixed top-0 w-full bg-background/75 backdrop-blur-sm shadow z-50'>
             <div className="flex justify-between items-center w-full max-w-[1440px] px-4 py-2">
                 <div className="flex justify-start items-center gap-3">
                     <Link href='/' className="flex justify-center items-center rounded-full overflow-hidden">
